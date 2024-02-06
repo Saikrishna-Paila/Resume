@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saikrishna Paila's Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Saikrishna Paila Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="skills_and_achievements.html">Skills & Achievements</a>
-            <a href="projects.html">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="hero">
-            <h1>Saikrishna Paila</h1>
-            <p>Data Science & Computer Science Student</p>
-        </div>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="https://via.placeholder.com/150" alt="Saikrishna Paila">
-        <p>Current Master of Science in Data Science student at The George Washington University with a background in Computer Science from Amrita Vishwa Vidyapeetham. Skilled in a range of technical and soft skills, I am passionate about solving complex data-driven problems.</p>
+  <header class="header">
+    <h1 class="header__name">Saikrishna Paila</h1>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#education">Education</a></li>
+        <li class="header__nav-item"><a href="#skills">Skills</a></li>
+        <li class="header__nav-item"><a href="#projects">Projects</a></li>
+        <li class="header__nav-item"><a href="#extracurricular">Extracurricular</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="education" class="section">
+      <h2 class="section__title">Education</h2>
+      <ul class="education-list">
+        <li class="education-item">
+          <h3 class="education-item__title">Master of Science, Data Science</h3>
+          <p class="education-item__institution">Columbian College of Arts and Sciences, The George Washington University</p>
+          <p class="education-item__date">Aug 23 - May 25</p>
+          <ul class="education-item__details">
+            <li class="education-item__detail">Relevant Coursework: Intro to Data Mining, Data Warehousing, Visualization of Complex Data</li>
+          </ul>
+        </li>
+        <li class="education-item">
+          <h3 class="education-item__title">Bachelor of Technology, Computer Science</h3>
+          <p class="education-item__institution">Amrita School of Computing, Amrita Vishwa Vidyapeetham</p>
+          <p class="education-item__date">June 19 Jun 23</p>
+          <ul class="education-item__details">
+            <li class="education-item__detail">Relevant Coursework: Natural Language Processing, Machine Learning, Distributed Systems, DBMS, Time Series Analysis, Mining of Massive Datasets, Social Network Analysis, Foundations of Data Science</li>
+          </ul>
+        </li>
+      </ul>
     </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>The George Washington University, Washington DC</strong><br>
-        Master of Science in Data Science (Anticipated May 2025)</p>
-        <p><strong>Amrita Vishwa Vidyapeetham, Coimbatore, India</strong><br>
-        B.Tech in Computer Science (Aug 2019 - Jun 2023), GPA: 3.12</p>
-    </section>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Saikrishna Paila</p>
-        <a href="https://www.linkedin.com">LinkedIn</a>
-        <a href="https://www.github.com">GitHub</a>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <section id="skills" class="section">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills-list">
+        <li class="skills-item">
+          <h3 class="skills-item__title">Languages</h3>
+          <ul class="skills-list__details">
+            <li class="skills-item__detail">Python</li>
+            <li class="skills-item__detail">C</li>
+            <li class="skills-item__detail">C++</li>
+            <li class="skills-item__detail">R basics</li>
+            <li class="skills-item__detail">Java</li>
+            <li class="skills-item__detail">PHP</li>
+          </ul>
+        </li>
+        <li class="skills-item">
+          <h3 class="skills-item__title">Software</h3>
+          <
