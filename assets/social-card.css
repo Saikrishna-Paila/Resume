@@ -1,0 +1,89 @@
+.social-card {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Reduced gap for smaller overall size */
+  background: rgb(255, 255, 255);
+  padding: 15px 20px; /* Reduced padding for smaller overall size */
+  border-radius: 10px; /* Optional: Adjusted for aesthetic consistency */
+  transform: translateX(-25px); /* Move it 20 pixels to the left */
+}
+
+.Btn {
+  width: 35px; /* Reduced width */
+  height: 35px; /* Reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 5px; /* Optional: Adjusted for aesthetic consistency */
+  cursor: pointer;
+  transition: all 0.3s;
+  background-size: cover;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 8px; /* Optional: Adjusted for aesthetic consistency */
+  transition: all 0.3s;
+  border: 0px solid rgba(156, 156, 156, 0.466);
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 8px; /* Optional: Adjusted for aesthetic consistency */
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px; /* No change required here */
+}
+
+/* The rest of your CSS remains unchanged */
+
+.Btn:hover .BG {
+  transform: scale(1.3); /* Adjusted scale down for smaller size */
+  font-size: 15px; /* Adjusted font size down for smaller size */
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+.instagram .BG {
+  background: #e1306c;
+}
+.gmail .BG {
+  background: #d14836;
+}
+.facebook .BG {
+  background: #3b5998;
+}
+.whatsapp .BG {
+  background: #075e54;
+}
+
+.Btn:hover .BG {
+  transform: scale(1.5);
+  font-size: 20px;
+  color: white;
+}
+

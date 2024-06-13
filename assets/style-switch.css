@@ -1,0 +1,59 @@
+/* Slider styles */
+.theme-switch-wrapper {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust based on total size */
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 60px;
+}
+.theme-switch input { display: none; }
+.slider {
+    background-color: #2196F3; /* Dark mode color */
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    transition: .4s;
+}
+.slider:before {
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px; /* Start near the bottom for dark mode */
+    transition: .4s;
+    border-radius: 50%;
+    transform: translateY(2px); /* Adjust if needed */
+}
+input:checked + .slider {
+    background-color: #ccc; /* Light mode color */
+}
+input:checked + .slider:before {
+    transform: translateY(-26px); /* Move upwards towards the moon */
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+/* Icons */
+.icon {
+    display: block;
+    margin: 10px 0; /* Adjust spacing */
+}
+
+.moon, .sun {
+    font-size: 24px; /* Adjust based on your icons' size */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
