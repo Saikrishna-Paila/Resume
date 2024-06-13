@@ -53,8 +53,6 @@
   font-size: 0px; /* No change required here */
 }
 
-/* The rest of your CSS remains unchanged */
-
 .Btn:hover .BG {
   transform: scale(1.3); /* Adjusted scale down for smaller size */
   font-size: 15px; /* Adjusted font size down for smaller size */
@@ -67,18 +65,20 @@
   backdrop-filter: blur(4px);
 }
 
-
 .instagram .BG {
   background: #e1306c;
 }
 .gmail .BG {
   background: #d14836;
 }
-.facebook .BG {
-  background: #3b5998;
+.github .BG {
+  background: #333;
 }
 .whatsapp .BG {
   background: #075e54;
+}
+.linkedin .BG {
+  background: #0e76a8;
 }
 
 .Btn:hover .BG {
@@ -86,4 +86,3 @@
   font-size: 20px;
   color: white;
 }
-
