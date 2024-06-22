@@ -40,10 +40,18 @@
     <link rel="stylesheet" href="assets1/css/card.css" />
 
 
+    
+
+
 
     <!-- Theme Switch JS (Dark Mode Toggle) -->
     <!-- Ensure this path is correct based on where you host or serve your files -->
     <script src="assets/theme-switch.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
   </head>
 
 
@@ -605,134 +613,156 @@
       <!-- Resume End -->
 
 
-      <!--  Portfolio Start  -->
+      <!-- Portfolio Start -->
       <section id="portfolio" class="section portfolio">
         <div class="container">
           <div class="heading-meta-container">
             <h2 class="heading-title">Portfolio</h2>
-            <h6 class="description">See My Ausome Work====== still in process ---- see you soon....</h6>
+            <h6 class="description">See My Awesome Work</h6>
           </div>
           <div class="row">
-            <!--   Portfolio Filters   -->
+            <!-- Portfolio Filters -->
             <ul id="portfolio-filter" class="list-inline col-lg-12 portfolio-filter text-center">
               <li class="list-inline-item">
                 <a href="javascript:void(0)" data-filter="*" class="active">All</a>
               </li>
               <li class="list-inline-item">
-                <a href="javascript:void(0)" data-filter=".webdesign">Web Design</a>
+                <a href="javascript:void(0)" data-filter=".python">Python</a>
               </li>
               <li class="list-inline-item">
-                <a href="javascript:void(0)" data-filter=".mobiledesign">Mobile Design</a>
+                <a href="javascript:void(0)" data-filter=".mysql">MySQL</a>
               </li>
               <li class="list-inline-item">
-                <a href="javascript:void(0)" data-filter=".sound">Sound</a>
+                <a href="javascript:void(0)" data-filter=".tableau">Tableau</a>
               </li>
               <li class="list-inline-item">
-                <a href="javascript:void(0)" data-filter=".graphic">Graphic</a>
+                <a href="javascript:void(0)" data-filter=".ml">Machine Learning</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void(0)" data-filter=".dl">Deep Learning</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void(0)" data-filter=".cloud">Cloud</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="javascript:void(0)" data-filter=".llm">LLM</a>
               </li>
             </ul>
           </div>
           <div class="portfolio-items border-line-v row">
-            <!-- Item 01 -->
-            <div class="col-md-6 col-lg-4 portfolio-item sound">
-              <div class="portfolio-box">
-                <div class="portfolio-image">
-                  <img src="8.jpg" alt="/">
-                  <div class="portfolio-icon">
-                    <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="portfolio-magnific mfp-iframe">
-                      <i class="bi bi-music-note-beamed"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <h6 class="blog-header">Tak photo on the waves</h6>
-                  <p class="mb-0">image</p>
-                </div>
-              </div>
-            </div>
-            <!-- Item 02 -->
-            <div class="col-md-6 col-lg-4 portfolio-item sound">
-              <div class="portfolio-box">
-                <div class="portfolio-image">
-                  <img src="9.jpg" alt="/">
-                  <div class="portfolio-icon">
-                    <a href="https://player.vimeo.com/video/158284739" class="portfolio-magnific mfp-iframe">
-                      <i class="bi bi-camera-video"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <h6 class="blog-header">Tak photo on the waves</h6>
-                  <p class="mb-0">image</p>
-                </div>
-              </div>
-            </div>
-            <!-- Item 03 -->
-            <div class="col-md-6 col-lg-4 portfolio-item sound">
-              <div class="portfolio-box">
-                <div class="portfolio-image">
-                  <img src="10.jpg" alt="/">
-                  <div class="portfolio-icon">
-                    <a href="portfolio-01.html" class="ajax-page-load">
-                      <i class="bi bi-file-earmark-text"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <h6 class="blog-header">Tak photo on the waves</h6>
-                  <p class="mb-0">image</p>
-                </div>
-              </div>
-            </div>
-            <!-- Item 04 -->
-            <div class="col-md-6 col-lg-4 portfolio-item mobiledesign webdesign">
-              <div class="portfolio-image">
-                <img src="11.jpg" alt="/">
-                <div class="portfolio-icon">
-                  <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="portfolio-magnific mfp-iframe">
-                    <i class="bi bi-music-note-beamed"></i>
+            <!-- Data-Driven Insights for Apple Stock Market Predictions -->
+            <div class="col-md-6 col-lg-4 portfolio-item python ml">
+              <div class="cardP">
+                <img class="cardP__image" src="APPLE.png" alt="Apple Stock Market Predictions">
+                <div class="cardP__content">
+                  <p class="cardP__title">Data-Driven Insights for Apple Stock Market Predictions</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Developed time-series forecasting models to analyze Apple Inc.'s stock data spanning nearly four decades.<br>
+                    <strong>Tools & Algorithms Used:</strong> Python, LSTM, XGBoost, Voting Regressor, ARIMA<br>
+                    <strong>Conclusion:</strong> Improved accuracy in stock predictions through feature engineering, hyperparameter optimization, and ensemble techniques.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Apple_stock_predication_using_RNN" target="_blank">
+                    <button class="cardP__button">Source Code</button>
                   </a>
                 </div>
               </div>
-              <div class="portfolio-content">
-                <h6 class="blog-header">Detailed Project 2</h6>
-                <p class="mb-0">image</p>
-              </div>
             </div>
-            <!-- Item 05 -->
-            <div class="col-md-6 col-lg-4 portfolio-item mobiledesign sound">
-              <div class="portfolio-image">
-                <img src="12.jpg" alt="/">
-                <div class="portfolio-icon">
-                  <a href="https://player.vimeo.com/video/158284739" class="portfolio-magnific mfp-iframe">
-                    <i class="bi bi-camera-video"></i>
+            
+            <!-- Advanced Data Visualization of Los Angeles Crime Patterns -->
+            <div class="col-md-6 col-lg-4 portfolio-item tableau">
+              <div class="cardP">
+                <img class="cardP__image" src="crime.png" alt="Los Angeles Crime Patterns">
+                <div class="cardP__content">
+                  <p class="cardP__title">Advanced Data Visualization of Los Angeles Crime Patterns</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Created a data visualization platform for analyzing Los Angeles crime trends using a 900K record dataset.<br>
+                    <strong>Tools Used:</strong> Tableau, Python<br>
+                    <strong>Conclusion:</strong> Enhanced law enforcement strategies through interactive dashboards highlighting key geographic and temporal patterns.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Visualisation_of_LosAngeles_Crime_Data_using_Tableau" target="_blank">
+                    <button class="cardP__button">Source Code</button>
                   </a>
                 </div>
               </div>
-              <div class="portfolio-content">
-                <h6 class="blog-header">Detailed Project 2</h6>
-                <p class="mb-0">image</p>
-              </div>
             </div>
-            <!-- Item 06 -->
-            <div class="col-md-6 col-lg-4 portfolio-item mobiledesign">
-              <div class="portfolio-image">
-                <img src="13.jpg" alt="/">
-                <div class="portfolio-icon">
-                  <a href="portfolio-01.html" class="ajax-page-load">
-                    <i class="bi bi-file-earmark-text"></i>
+
+            <!-- Credit Card Churn Analysis -->
+            <div class="col-md-6 col-lg-4 portfolio-item python ml">
+              <div class="cardP">
+                <img class="cardP__image" src="Credit.png" alt="Credit Card Churn Analysis">
+                <div class="cardP__content">
+                  <p class="cardP__title">Credit Card Churn Analysis: Predictive Modeling for Customer Retention</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Developed a churn prediction model to enhance customer retention in the credit card industry.<br>
+                    <strong>Tools & Algorithms Used:</strong>  R, Random Forest, Logistic Regression, Decision Tree<br>
+                    <strong>Conclusion:</strong> Significantly improved customer loyalty strategies through analysis of transaction data.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Credit_Chronicles" target="_blank">
+                    <button class="cardP__button">Source Code</button>
                   </a>
                 </div>
               </div>
-              <div class="portfolio-content">
-                <h6 class="blog-header">Detailed Project 2</h6>
-                <p class="mb-0">image</p>
+            </div>
+
+            <!-- Supply Chain Management Database Efficiency Analysis -->
+            <div class="col-md-6 col-lg-4 portfolio-item mysql">
+              <div class="cardP">
+                <img class="cardP__image" src="Supply1.png" alt="Supply Chain Management Database Efficiency Analysis">
+                <div class="cardP__content">
+                  <p class="cardP__title">Supply Chain Management Database Efficiency Analysis</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Investigated the efficiency of various databases in supply chain management using DataCo's dataset.<br>
+                    <strong>Tools Used:</strong> MySQL, MongoDB, Neo4j<br>
+                    <strong>Conclusion:</strong> Optimized database selection for supply chain applications based on data retrieval speed and network pathfinding performance.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Supply-chain-management" target="_blank">
+                    <button class="cardP__button">Source Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Retail Analytics: Utilizing Machine Learning for Subscription Insights -->
+            <div class="col-md-6 col-lg-4 portfolio-item python ml">
+              <div class="cardP">
+                <img class="cardP__image" src="Customer_Shopping_Preference.png" alt="Customer Shopping Preference">
+                <div class="cardP__content">
+                  <p class="cardP__title">Retail Analytics: Utilizing ML for Subscription Insights</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Predictive analytics framework using Random Forest and Neural Network models for Customer Shopping Preference analysis.<br>
+                    <strong>Tools & Algorithms Used:</strong> Python, Random Forest, Neural Network<br>
+                    <strong>Conclusion:</strong> Achieved 97% prediction accuracy in customer subscription behavior through advanced data normalization, categorical encoding, and hyperparameter optimization techniques.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Customer_Shopping_Preference" target="_blank">
+                    <button class="cardP__button">Source Code</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indoor Multi-Camera Human Tracking -->
+            <div class="col-md-6 col-lg-4 portfolio-item python dl">
+              <div class="cardP">
+                <img class="cardP__image" src="human_tracking.jpg" alt="Indoor Multi-Camera Human Tracking">
+                <div class="cardP__content">
+                  <p class="cardP__title">Indoor Multi-Camera Human Tracking</p>
+                  <p class="cardP__description">
+                    <strong>Abstract:</strong> Developed a state-of-the-art multi-camera people detection and tracking system for indoor environments.<br>
+                    <strong>Tools Used:</strong> Python, OpenCV, TensorFlow, Keras<br>
+                    <strong>Conclusion:</strong> Achieved substantial performance improvements in open environments by successfully addressing occlusion challenges.
+                  </p>
+                  <a href="https://github.com/Saikrishna-Paila/Muti-Camera-people-tracking" target="_blank">
+                    <button class="cardP__button">Source Code</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--  Portfolio End  -->
+      <!-- Portfolio End -->
+
+
 
       <!--  Blog Start  -->
       <section id="blog" class="section blog">
