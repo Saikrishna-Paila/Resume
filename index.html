@@ -34,18 +34,10 @@
     <link rel="stylesheet" href="assets/colors/blue.css">
     <!-- Style Switch CSS (Dark Mode) -->
     <link rel="stylesheet" href="assets/style-switch.css">
-    <link rel="stylesheet" href="assets/social-card.css">
-    <link rel="stylesheet" href="assets/ball.css">
-
     <link rel="stylesheet" href="assets1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets1/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets1/css/animate.min.css">
-
     <link rel="stylesheet" href="assets1/css/card.css" />
-    <link rel="stylesheet" href="assets1/css/button.css" />
-    <link rel="stylesheet" href="assets1/css/container1.css" />
-    <link rel="stylesheet" href="assets1/css/container2.css" />
-    <link rel="stylesheet" href="assets1/css/svgbox.css" />
 
 
 
@@ -842,17 +834,18 @@
             </div>
           </div>
           <div class="row mt-4">
-            <!-- GitHub Repos and Contact Form -->
-            <div class="d-flex flex-row">
-              <div class="p-2 flex-fill" style="width: 60%;">
-                <h3 class="subtitle" style="color: black;">Repositories</h3>
-                <div id="github-repos" style="color: black;">Loading repositories...</div>
-                <script src="github-repos.js"></script>
-                <a href="https://github.com/Saikrishna-Paila">
-                  <img src="https://img.shields.io/github/followers/Saikrishna-Paila?label=Follow&style=social" alt="GitHub Badge">
-                </a>
-              </div>
-              <div class="p-2 flex-fill container2" style="width: 40%;">
+            <!-- GitHub Repos -->
+            <div class="col-md-8 col-12 mb-4">
+              <h3 class="subtitle" style="color: black;">Repositories</h3>
+              <div id="github-repos" style="color: black;">Loading repositories...</div>
+              <script src="github-repos.js"></script>
+              <a href="https://github.com/Saikrishna-Paila">
+                <img src="https://img.shields.io/github/followers/Saikrishna-Paila?label=Follow&style=social" alt="GitHub Badge">
+              </a>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-md-4 col-12">
+              <div class="container2">
                 <div class="heading">Contact Me</div>
                 <div class="form">
                   <form id="contactForm">
@@ -870,7 +863,7 @@
                     </div>
                     <div class="form-item">
                       <button type="submit" class="login-button">Send Message</button>
-                      <button type="button" id="clearFormButton" class="login-button">Clear Form</button>
+                      <button type="button" id="clearFormButton" class="clear-button">Clear Form</button>
                     </div>
                   </form>
                 </div>
@@ -905,8 +898,6 @@
           document.getElementById('contactForm').reset();
         });
       </script>
-
-
 
 
 
