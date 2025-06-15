@@ -44,10 +44,7 @@ Developed a system to track individuals across multiple camera feeds using advan
 Feel free to explore my projects and reach out for any collaborations or opportunities!
 
 - **Email:** [saikrishna.paila@gwmail.gwu.edu](mailto:saikrishna.paila@gwmail.gwu.edu)
-- **Phone:** +1 (571) 353-9563
 - **LinkedIn:** [Saikrishna Paila](https://www.linkedin.com/in/saikrishnapaila)
 - **GitHub:** [Saikrishna-Paila](https://github.com/Saikrishna-Paila)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
