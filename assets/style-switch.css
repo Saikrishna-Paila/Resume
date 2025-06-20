@@ -1,0 +1,150 @@
+/* Slider styles */
+.theme-switch-wrapper {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust based on total size */
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 60px;
+}
+.theme-switch input { display: none; }
+.slider {
+    background-color: #2196F3; /* Dark mode color */
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    transition: .4s;
+}
+.slider:before {
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px; /* Start near the bottom for dark mode */
+    transition: .4s;
+    border-radius: 50%;
+    transform: translateY(2px); /* Adjust if needed */
+}
+input:checked + .slider {
+    background-color: #ccc; /* Light mode color */
+}
+input:checked + .slider:before {
+    transform: translateY(-26px); /* Move upwards towards the moon */
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+/* Icons */
+.icon {
+    display: block;
+    margin: 10px 0; /* Adjust spacing */
+}
+
+.moon, .sun {
+    font-size: 24px; /* Adjust based on your icons' size */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.social-card {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Reduced gap for smaller overall size */
+  background: rgb(255, 255, 255);
+  padding: 15px 20px; /* Reduced padding for smaller overall size */
+  border-radius: 10px; /* Optional: Adjusted for aesthetic consistency */
+  transform: translateX(-25px); /* Move it 20 pixels to the left */
+}
+
+.Btn {
+  width: 35px; /* Reduced width */
+  height: 35px; /* Reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 5px; /* Optional: Adjusted for aesthetic consistency */
+  cursor: pointer;
+  transition: all 0.3s;
+  background-size: cover;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 8px; /* Optional: Adjusted for aesthetic consistency */
+  transition: all 0.3s;
+  border: 0px solid rgba(156, 156, 156, 0.466);
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 8px; /* Optional: Adjusted for aesthetic consistency */
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px; /* No change required here */
+}
+
+.Btn:hover .BG {
+  transform: scale(1.3); /* Adjusted scale down for smaller size */
+  font-size: 15px; /* Adjusted font size down for smaller size */
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.instagram .BG {
+  background: #e1306c;
+}
+.gmail .BG {
+  background: #d14836;
+}
+.github .BG {
+  background: #333;
+}
+.whatsapp .BG {
+  background: #075e54;
+}
+.linkedin .BG {
+  background: #0e76a8;
+}
+
+.Btn:hover .BG {
+  transform: scale(1.5);
+  font-size: 20px;
+  color: white;
+}

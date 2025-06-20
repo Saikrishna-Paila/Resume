@@ -1,0 +1,25 @@
+.svgbox {
+    --blue: rgb(148, 66, 63);
+    stroke: var(--blue);
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 50, 14;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+    width: 100px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
+    transform: rotate(90deg); /* Rotate the SVG to make it vertical */
+    position: relative;
+    left: -40px; /* Move the SVG to the left */
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 1;
+    }
+  
+    to {
+      stroke-dashoffset: 1;
+    }
+  }
+  
