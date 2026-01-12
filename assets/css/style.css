@@ -17638,21 +17638,69 @@ body.dark-mode {
 
 @media (max-width: 767px) {
   .cardP {
-    aspect-ratio: 4/3;
-    min-height: 250px; /* Reduced minimum height */
+    aspect-ratio: auto;
+    min-height: auto;
+    max-height: none;
+    margin-bottom: 15px;
+    height: auto;
   }
-  
+
+  .cardP__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
   .cardP__title {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 8px;
   }
-  
+
   .cardP__description {
     font-size: 11px;
+    line-height: 1.4;
   }
-  
+
   .cardP__button {
     padding: 8px 12px;
     font-size: 11px;
+  }
+
+  .cardP__content {
+    padding: 12px;
+  }
+
+  .portfolio-item {
+    padding: 8px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .cardP {
+    aspect-ratio: auto;
+    min-height: auto;
+    max-height: none;
+    height: auto;
+  }
+
+  .cardP__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .cardP__title {
+    font-size: 14px;
+  }
+
+  .cardP__description {
+    font-size: 10px;
+  }
+
+  .cardP__content {
+    padding: 10px;
   }
 }
 
